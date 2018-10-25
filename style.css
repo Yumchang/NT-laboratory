@@ -23,16 +23,25 @@ a {
   padding:30px;
 }
 
+ ul{
+   padding:7px;
+ }
+
+ li{
+   padding:1.5px;
+ }
+
 #grid{
 display: grid;
 grid-template-columns: 200px 1fr;
 }
 #grid ol{
-padding-left:40px;
+padding-left:35px;
+width: 215px;
 content:200px;
 }
 #grid #article{
-padding-left:80px;
+padding-left:125px;
 }
 @media(max-width:800px){
 #grid{
