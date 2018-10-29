@@ -1,6 +1,12 @@
 <!doctype html>
 <html>
 <head>
+  <head>
+    <style type="text/css">
+
+  a { text-decoration:none }
+
+  </style>
   <title>아두이노</title>
   <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
@@ -11,7 +17,7 @@
 
 
 <div id="grid">
-  <ol>
+  <dl>
     <li><a href="index.html">NT 연구소 소개</a></li><br>
     <li><a href="1.html">1주차 OT + 4차산업혁명에 대하여</a></li><br>
     <li><a href="2.html">2-3주차 Appinventer</a></li><br>
@@ -20,7 +26,7 @@
     <li><a href="5.html">NT연구소 자율동아리</a></li>
     <ul>
       <li><a href="6.html"style="color:grey">아두이노</a></li>
-      <li><a href="7.html">IOT</a></li><br>
+      <li><a href="7.html">IoT</a></li><br>
     </ul>
     <li><a href="8.html">추가자료</a></li>
     <ul>
@@ -30,7 +36,7 @@
       <li><a href="12.html">컴퓨팅 시스템</a></li><br>
     </ul>
     <li><a href="13.html">출처</a></li>
-  </ol>
+  </dl>
   <div id="article">
   <br><br>
   <p>
@@ -38,34 +44,38 @@
 
   <p>
   <img src="스크린샷 2018-10-01 오후 10.43.09.png" width="500"><br><br>
- <br><font size=4>
-   <strong>아두이노</strong>는 자신의 아이디어를 구현하기 위한 학습용 디지털 제작 도구 중 하나이다.
-   <br> '아주 친한 친구'라는 뜻을 가지고 있으며 2005년 이탈리아에서 시작되었고 마이크컨트롤러 보드와 관련된 개발 도구 및 환경을 모두 제공한다.
-   <br>위의 로고는 무한대를 뜻한다.
-   <br><br><br><strong>먼저 아두이노를 배우기 전 아두이노를 이용하기 위한 기본 지식들을 알아보자.</strong>
-   <br><strong>1. 전기란? </strong>원자는 원자핵과 전자로 구성되며, 그 개수가 동일하여 전기적으로 평형을 유지한다.
-   <br>외부의 충격 및 기타 이상 현상으로 전자가 외부로 이동하게 되면 전기적 평형상태가 깨져 전기 성질을 가지게 되는데,
-   <br>이를 전하라 하고, 전하가 움직이는 현상을 전기가 흐른다(전류)라고 이야기 한다.
-   <br><br><strong>2. 전기의 종류</strong>
-   <br>-직류(DC): 시간에 관계엾이 방향과 크기가 일정하게 흐는 전류. ex)건전지
-   <br>-교류(AC): 시간에 따라 주기적으로 전류의 방향이 변하는 전류. ex)가정에서 사용하는 전기
-   <br><br><strong>3. 옴의 법칙</strong>
-   <br>-전압(V): 전류가 흐를 때의 압력.
-   <br>-전류(I): 전하가 이동하는 현상.
-   <br>-저항(R): 전기의 흐름을 방해하는 성질.
-   <br>-I = V/R
-   <br><br><strong>4. 전기의 중요한 법칙</strong>
-   <br>-키르히호프의 제 1법칙(전하량 보존 법칙): 일정한 양만큼의 전류가 들어왔으면 그만큼의 전류가 나가는 법칙.
-   <br>-키르히호프의 제 2법칙: 저항선의 양 끝의 전압(옴의 법칙에 의해 전기 저항과 전류의 세기의 곱은 같음)의 합은 그 회로의 전압.
-   <br><br><br><strong>그렇다면 본격적으로 아두이노에 대해 알아보자.아두이노는 어떻게 작동하는 것일까?</strong><br><br>
-   <img src="gpgp.png" width="700"><br><br><br>
-   -우노 보드 사용법<br>
-   <img src="qhdhem.png" width="600"><br><br>
-   -빵판 사용법<br><br>
+ <br><font size=3>
+   <strong>아두이노</strong>는 자신의 아이디어를 구현하기 위한 학습용 디지털 제작 도구 중 하나이다.<br>
+   <br> '아주 친한 친구'라는 뜻을 가지고 있으며 <br>
+   <br>2005년 이탈리아에서 시작되었고 마이크컨트롤러 보드와 관련된 개발 도구 및 환경을 모두 제공한다.<br>
+   <br>위의 로고는 무한대를 뜻한다.<br>
+   <br><br><br><strong>먼저 아두이노를 배우기 전 아두이노를 이용하기 위한 기본 지식들을 알아보자.</strong><br>
+   <br><strong>1. 전기란? </strong>원자는 원자핵과 전자로 구성되며, <br>
+   <br>그 개수가 동일하여 전기적으로 평형을 유지한다.<br>
+   <br>외부의 충격 및 기타 이상 현상으로 전자가 외부로 이동하게 되면 <br>
+   <br>전기적 평형상태가 깨져 전기 성질을 가지게 되는데,<br>
+   <br>이를 전하라 하고, 전하가 움직이는 현상을 전기가 흐른다(전류)라고 이야기 한다.<br>
+   <br><br><strong>2. 전기의 종류</strong><br>
+   <br>-직류(DC): 시간에 관계엾이 방향과 크기가 일정하게 흐는 전류. ex)건전지<br>
+   <br>-교류(AC): 시간에 따라 주기적으로 전류의 방향이 변하는 전류. ex)가정에서 사용하는 전기<br>
+   <br><br><strong>3. 옴의 법칙</strong><br>
+   <br>-전압(V): 전류가 흐를 때의 압력.<br>
+   <br>-전류(I): 전하가 이동하는 현상.<br>
+   <br>-저항(R): 전기의 흐름을 방해하는 성질.<br>
+   <br>-I = V/R<br>
+   <br><br><strong>4. 전기의 중요한 법칙</strong><br>
+   <br>-키르히호프의 제 1법칙(전하량 보존 법칙): 일정한 양만큼의 전류가 들어왔으면 그만큼의 전류가 나가는 법칙.<br>
+   <br>-키르히호프의 제 2법칙: 저항선의 양 끝의 전압(옴의 법칙에 의해 전기 저항과 전류의 세기의 곱은 같음)의 합은 그 회로의 전압.<br>
+   <br><br><br><strong>그렇다면 본격적으로 아두이노에 대해 알아보자.
+     <br>아두이노는 어떻게 작동하는 것일까?</strong><br>
+   <img src="gpgp.png" width="700"><br><br><br><br><br>
+   <b>-우노 보드 사용법<br><br></b>
+   <img src="qhdhem.png" width="600"><br><br><br><br>
+   <b>-빵판 사용법<br><br><br></b>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6iBPtJ5bbqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-   <br><br><br><br>
-   코딩 틀에는 엔트리, 스크래치,아두이노 등이 있지만 우리는 그중에서 엔트리를 쓰고 있다.
-  <br><strong>엔트리</strong>는 코딩 교육용 프로그램 중 하나이고 자바 스크립트 기반의 블럭코딩 툴이며 여러 보드와 호환된다는 장점이 있다.
+   <br><br><br><br><br><br><br><br><br><br>
+   코딩 틀에는 엔트리, 스크래치,아두이노 등이 있지만 우리는 그중에서 엔트리를 쓰고 있다.<br>
+  <br><strong>엔트리</strong>는 코딩 교육용 프로그램 중 하나이고 자바 스크립트 기반의 블럭코딩 툴이며 여러 보드와 호환된다는 장점이 있다.<br>
   <br><img src="dpsxmfl.png" width="300"><br></font size=4>
 
 </left>

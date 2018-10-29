@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
 <head>
+  <head>
+    <style type="text/css">
+  a { text-decoration:none }
+  </style>
   <title>IOT</title>
   <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
@@ -11,7 +15,7 @@
 
 
 <div id="grid">
-  <ol>
+  <dl>
     <li><a href="index.html">NT 연구소 소개</a></li><br>
     <li><a href="1.html">1주차 OT + 4차산업혁명에 대하여</a></li><br>
     <li><a href="2.html">2-3주차 Appinventer</a></li><br>
@@ -20,7 +24,7 @@
     <li><a href="5.html">NT연구소 자율동아리</a></li>
     <ul>
       <li><a href="6.html">아두이노</a></li>
-      <li><a href="7.html"style="color:grey">IOT</a></li><br>
+      <li><a href="7.html"style="color:grey">IoT</a></li><br>
     </ul>
     <li><a href="8.html">추가자료</a></li>
     <ul>
@@ -30,82 +34,89 @@
       <li><a href="12.html">컴퓨팅 시스템</a></li><br>
     </ul>
     <li><a href="13.html">출처</a></li>
-  </ol>
+  </dl>
   <div id="article">
   <br><br>
   <p>
   <left>
 
   <p>
-    <img src="IOT.png" width="500"><br><br>
-   <br><font size=4>
-   <br><strong>사물인터넷(Internet of Things, 약어로 IoT)</strong>은 각종 사물에 센서와 통신 기능을 내장하여 인터넷에 연결하는 기술.
-   <br>즉, 무선 통신(WPAN, Wi-Fi,LTE,Bluetooth 등)을 통해 각종 사물을 연결하는 기술을 의미한다.
-   <br>이때 IOT는 우리가 인터넷을 통해 서로의 정보를 교환하는 것처럼 네트워크에 연결된 '사물'들 사이에 정보를 공유해 유익한 정보를 생산해 내는데,
-   <br>이를 사람의 개입 없이 할 수 있다.<br><br>
-   다음은 사물인터넷의 전체 구성이다.<br><br>
-   <img src="rnwh.png" width="500"><br>
-   IOT의 구성요소는 디바이스, 게이트웨이,서버로 나눌 수 있다.
-   <br>게이트웨이는 인터넷에 직접 접속할 수 없는 디바이스와 인터넷 간의 중계 역할을 한다.
-   <br>서버는 데이터 송수신 역할을 하고 데이터를 처리(데이터 저장,분석 등)한 뒤 데이터를 데이터베이스에 저장하고 데이터를 활용하는 역할을 한다.<br><br><br>
-   다음은 IOT가 쓰일 수 있는 분야들이다.<br><br>
-   <img src="ex.iot.png" width="400"><br><br><br><br><br><br>
-  <h1><strong>IOT 아두이노,앱인벤터로 실습하기</strong></h1>
+    <img src="IOT.png" width="500px"><br><br>
+   <br><font size=3>
+   <br><strong>사물인터넷(Internet of Things, 약어로 IoT)</strong>은 각종 사물에 센서와 통신 기능을 <br>
+   <br>내장하여 인터넷에 연결하는 기술.<br>
+   <br>즉, 무선 통신(WPAN, Wi-Fi,LTE,Bluetooth 등)을 통해 각종 사물을 연결하는 기술을 의미한다.<br>
+   <br>이때 IOT는 우리가 인터넷을 통해 서로의 정보를 교환하는 것처럼 <br>
+   <br>네트워크에 연결된 '사물'들 사이에 정보를 공유해 유익한 정보를 생산해 내는데,<br>
+   <br>이를 사람의 개입 없이 할 수 있다.<br><br><br>
+   <img src="rnwh.png" width="500"><br><br>
+   <br>▲다음 그림은 <b>사물인터넷의 구성</b>이다.<br>
+   <br>IOT의 구성요소는 디바이스, 게이트웨이,서버로 나눌 수 있다.<br>
+   <br>게이트웨이는 인터넷에 직접 접속할 수 없는 디바이스와 인터넷 간의 중계 역할을 한다.<br>
+   <br>서버는 데이터 송수신 역할을 하고 데이터를 처리(데이터 저장,분석 등)한 뒤 <br>
+   <br>데이터를 데이터베이스에 저장하고 데이터를 활용하는 역할을 한다.<br><br><br><br>
+   <img src="ex.iot.png" width="400">
+   <br><br>▲다음 그림은 IOT가 쓰일 수 있는 분야들이다.<br><br><br><br><br><br><br><br><br><br>
+   </left>
+  <h1>IOT 아두이노,앱인벤터로 실습하기</h1><center>
   <br><img src="bi.png" width="400">
  <br>(<a href="6.html"><span style="color:blue">아두이노</span></a></span> , <a href="2.html"><span style="color:blue">2주차-3주차 Appinventer</span></a> 목록을 참고해주세요.)
-  <br><br><br><strong>----------예제1:LED on&off----------</strong><br>
-  <br>예제 내용: 블루투스 연결으로 핸드폰에서 LED 켜기 버튼을 클릭하면 아두이노가 LED를 켜고 LED 끄기 버튼을 클릭하면 아두이노가 LED를 끕니다.<br><br>
-  <br><img src="dl.png" width="98%"><br>
-  Screen1 화면 디자인<br>
-  <br><img src="bl.png" width="98%"><br>
-  Screen1 화면 블록<br>
-  <br><br><img src="qrl.png" width="350">
-  <br> LED on&off 예시 다운받기<br>
-  <br><img src="ad1.png" width="50%"><br>
-  아두이노 배치도<br>
+  <br><br><br><br><br><br><br><br><strong>----------예제1:LED on&off----------</strong><br>
+  <br>예제 내용: 블루투스 연결으로 핸드폰에서 LED 켜기 버튼을 클릭하면 <br>
+  <br>아두이노가 LED를 켜고 LED 끄기 버튼을 클릭하면 아두이노가 LED를 끕니다.<br><br><br>
+  <br><img src="dl.png" width="600px"><br><br>
+  Screen1 화면 디자인<br><br>
+  <br><img src="bl.png" width="600px"><br><br>
+  Screen1 화면 블록<br><br>
+  <br><br><img src="qrl.png" width="350"><br>
+  <br> LED on&off 예시 다운받기<br><br>
+  <br><img src="ad1.png" width="500px"><br><br>
+  아두이노 배치도<br><br>
   <br><iframe width="560" height="315" src="https://www.youtube.com/embed/Y2DOsGdco8k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <br> LED on&off 예시 동영상<br>
+  <br><br> LED on&off 예시 동영상<br><br><br><br><br><br><br>
 
-  <br><br><strong>----------예제2:LED 음성으로 on&off----------</strong><br>
-  <br>예제 내용: 블루투스 연결으로 핸드폰에서 '켜기'라고 말하면 아두이노가 LED를 켜고 '끄기'라고 말하면 아두이노가 LED를 끕니다.<br><br>
-  <br><img src="udl.png" width="98%"><br>
-  Screen1 화면 디자인<br>
-  <br><img src="ubl.png" width="98%"><br>
-  Screen1 화면 블록<br>
-  <br><br><img src="uqrl.png" width="350">
-  <br> LED 음성으로 on&off 예시 다운받기<br>
-  <br><img src="ad2.png" width="50%"><br>
-  아두이노 배치도<br>
+  <br><br><strong>----------예제2:LED 음성으로 on&off----------</strong><br><br>
+  <br>예제 내용: 블루투스 연결으로 핸드폰에서 '켜기'라고 말하면 아두이노가 LED를 켜고<br>
+  <br>'끄기'라고 말하면 아두이노가 LED를 끕니다.<br><br><br>
+  <br><img src="udl.png" width="600px"><br><br>
+  Screen1 화면 디자인<br><br>
+  <br><img src="ubl.png" width="600px"><br><br>
+  Screen1 화면 블록<br><br>
+  <br><br><img src="uqrl.png" width="350"><br>
+  <br> LED 음성으로 on&off 예시 다운받기<br><br>
+  <br><img src="ad2.png" width="500px"><br><br>
+  아두이노 배치도<br><br>
   <br><iframe width="560" height="315" src="https://www.youtube.com/embed/4x2Rs74fO4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <br> LED 음성으로 on&off 예시 동영상<br>
+  <br><br> LED 음성으로 on&off 예시 동영상<br><br><br><br><br><br><br>
 
-  <br><br><strong>----------예제3:경비 시스템----------</strong><br>
-  <br>예제 내용: 인체 감지 모션 센서(적외선을 발생시키는 사람이나 동물의 움직임을 감지함.)을 이용해
-  <br>아두이노 보드에 연결된 인체 감지 모션 센서에 움직임이 감지되면 앱에서 사용자에게 알림을 보냅니다.<br><br>
-  <br><img src="momd.png" width="98%"><br>
-  Screen1 화면 디자인<br>
-  <br><img src="momb.png" width="98%"><br>
-  Screen1 화면 블록<br>
-  <br><br><img src="momqr.png" width="350">
-  <br> 경비 시스템 예시 다운받기<br>
-  <br><img src="ad3.png" width="50%"><br>
-  아두이노 배치도<br>
+  <br><br><strong>----------예제3:경비 시스템----------</strong><br><br>
+  <br>예제 내용: 인체 감지 모션 센서(적외선을 발생시키는 사람이나 동물의 움직임을 감지함)을 이용해<br>
+  <br>아두이노 보드에 연결된 인체 감지 모션 센서에 움직임이 감지되면 <br>
+  <br>앱에서 사용자에게 알림을 보냅니다.<br><br><br>
+  <br><img src="momd.png" width="600px"><br><br>
+  Screen1 화면 디자인<br><br>
+  <br><img src="momb.png" width="600px"><br><br>
+  Screen1 화면 블록<br><br>
+  <br><br><img src="momqr.png" width="350"><br>
+  <br> 경비 시스템 예시 다운받기<br><br>
+  <br><img src="ad3.png" width="500px"><br><br>
+  아두이노 배치도<br><br>
   <br><iframe width="560" height="315" src="https://www.youtube.com/embed/ejaLPKEADXA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <br> 경비 시스템  예시 동영상<br>
+  <br><br>경비 시스템  예시 동영상<br><br><br><br><br><br><br><br>
 
-  <br><br><strong>----------예제4:햇빛으로부터 눈 보호하기.(feat.선그라스)----------</strong><br>
-  <br>예제 내용: 아두이노 보드에 연결된 조도 센서(밝기에 따라 저항 값이 바뀌는 성질을 이용해 밝기의 정도를 알 수 있음.)가
-  <br>1초마다 밝기를 측정해 앱으로 보내 측정 값에 따라 선그라스가 변경되도록 한다.<br><br>
-  <br><img src="jdod.png" width="98%"><br>
-  Screen1 화면 디자인<br>
-  <br><img src="jdob.png" width="98%"><br>
-  Screen1 화면 블록<br>
-  <br><br><img src="jdoqr.png" width="350">
-  <br> 경비 시스템 예시 다운받기<br>
-  <br><img src="ad4.png" width="50%"><br>
-  아두이노 배치도<br>
+  <br><br><strong>----------예제4:햇빛으로부터 눈 보호하기.(feat.선그라스)----------</strong><br><br>
+  <br>예제 내용: 아두이노 보드에 연결된 조도 센서(밝기에 따라 저항 값이 바뀌는 성질을 이용해 밝기의 정도를 알 수 있음)가<br>
+  <br>1초마다 밝기를 측정해 앱으로 보내 측정 값에 따라 선그라스가 변경되도록 한다.<br><br><br>
+  <br><img src="jdod.png" width="600px"><br><br>
+  Screen1 화면 디자인<br><br>
+  <br><img src="jdob.png" width="600px"><br><br>
+  Screen1 화면 블록<br><br>
+  <br><br><img src="jdoqr.png" width="350"><br>
+  <br> 경비 시스템 예시 다운받기<br><br>
+  <br><img src="ad4.png" width="500px"><br><br>
+  아두이노 배치도<br><br>
   <br><iframe width="560" height="315" src="https://www.youtube.com/embed/thkIUDsq8yc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <br> 햇빛으로부터 눈 보호하기 예시 동영상<br>
+  <br><br> 햇빛으로부터 눈 보호하기 예시 동영상<br><br>
 
 
 
@@ -117,8 +128,8 @@
 
 
 
-</font size=4>
-  </left>
+</font size>
+</center>
   </p>
       <p>
         <div id="disqus_thread"></div>
