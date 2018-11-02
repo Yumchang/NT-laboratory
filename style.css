@@ -17,6 +17,7 @@ dl{
   width:240px;
   margin:0;
   padding:20px;
+  padding-right: 25px;
 }
 #grid{
   display: grid;
