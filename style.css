@@ -1,5 +1,6 @@
 body{
   margin:0;
+  background-color: #F3F3F3;
 }
 
 a {
@@ -11,6 +12,7 @@ h1 {
   border-bottom:1px solid gray;
   margin:0;
   padding:20px;
+  background-color: #ABABAB;
 }
 dl{
   border-right:1px solid gray;
@@ -18,6 +20,7 @@ dl{
   margin:0;
   padding:20px;
   padding-right: 3px;
+  background-color: ;
 }
 #grid{
   display: grid;
