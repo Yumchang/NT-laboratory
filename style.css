@@ -14,10 +14,10 @@ h1 {
 }
 dl{
   border-right:1px solid gray;
-  width:280px;
+  width:300px;
   margin:0;
   padding:20px;
-  padding-right: 3px;
+  padding-right: 4px;
   background-color: ;
 }
 #grid{
@@ -30,7 +30,7 @@ dl{
   margin-top: 1px;
 }
 #grid #article{
-  padding-left:180px;
+  padding-left:200px;
 }
 @media(max-width:800px){
   #grid{
